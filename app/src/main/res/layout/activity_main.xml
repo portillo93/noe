@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="Direccion de IP: "
+            android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:id="@+id/activity_main_ip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="/"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/activity_home_bits"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="resetAll"
+        android:text="RESET" />
+</RelativeLayout>
